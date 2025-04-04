@@ -1,6 +1,8 @@
 def get_num_words(str):
     return len(str.split())
 
+# Returns a dictionary of each unique character
+# in a string and the number of appearances
 def get_char_counts(str):
     char_counts = {}
     for char in str:
@@ -11,6 +13,8 @@ def get_char_counts(str):
             char_counts[lowered] = 1
     return char_counts
 
+# Accepts a dictionary of character counts
+# Returns a list of dictionaries sorted via character count
 def sort_char_counts(char_counts_dict):
     # create list of character count dicts
     char_counts_list = []

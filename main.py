@@ -1,10 +1,14 @@
 import sys
 from stats import get_num_words, get_char_counts, sort_char_counts
 
+# Accepts a relative file path
+# Returns the contents of that file as a string
 def get_book_text(filepath):
     with open(filepath) as file:
         return file.read()
-    
+
+# Accepts a relative file path for a txt file
+# Prints numerical analysis of the file contents
 def anaylyze_book(path):
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {path}...")
